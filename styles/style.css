@@ -21,15 +21,19 @@
 }
 
 .ltvco-banner .desc:before {
-    color: yellow;
+    color: #EDAE59;
     content: "Start Here -"
 }
 
-.ltvco-banner button {
-    background-color: #eddf45;
-    background: linear-gradient(50deg, #eddf45, #f2b844);
+.go-btn {
+    background-color: #eddf45 !important;
+    background: linear-gradient(50deg, #f2b844, #eddf45);
     font-weight: 600;
     text-transform: uppercase;
+}
+
+.go-btn:focus {
+    background-color: #f2b844 !important;
 }
 
 

@@ -1,7 +1,7 @@
 <html>
-
 <head>
     <link rel="stylesheet" href="../styles/style.css">
+    <script src="../scripts/index.js"></script>
 </head>
 <div class="ltvco-banner banner-color w-100">
     <div class="ltvco-header w-100 d-flex mb-5">
@@ -23,10 +23,10 @@
     <p class="desc"> Look up the owner's name, photos and online profiles. See what you find!</p>
     <div class="form-group justify-content-center d-flex email-form">
         <div class="col-sm-12 col-md-4">
-            <input type="text" class="form-control p-3 mr-2 w-100" id="email" name="email" placeholder="EMAIL">
+            <input type="email" class="form-control p-3 mr-2 w-100" id="email" name="email" placeholder="EMAIL">
         </div>
         <div class="col-sm-12 col-md-2">
-            <button class="btn p-3 w-100">go!</button>
+            <input type="button" class="btn p-3 w-100 go-btn" value="GO!" id="search" onclick="search()"></button>
         </div>
 
     </div>
