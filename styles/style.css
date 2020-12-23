@@ -1,5 +1,11 @@
-.ltvco-banner {
+.banner-color {
     background-color: #265196;
+}
+.ltvco-color {
+    color: #265196;
+    font-weight: 600;
+}
+.ltvco-banner {
     height: 350px;
     text-align: center;
 }
@@ -19,41 +25,59 @@
     content: "Start Here -"
 }
 
-.ltvco-banner input {
-    width: 500px !important;
-}
-
 .ltvco-banner button {
     background-color: #eddf45;
     background: linear-gradient(50deg, #eddf45, #f2b844);
     font-weight: 600;
     text-transform: uppercase;
-    min-width: 115px;
 }
 
-/* .ltvco-banner .desc {
-    color: #eddf45;
-} */
 
 .ltvco-banner .lock {
     position: absolute;
-    left: 28%;
+    left: 26%;
     height: 15px;
     width: 15px;
 }
 
 .ltvco-banner .ltvco-info {
     color: #eddf45;
-    left: 30%;
+    left: 28%;
     position: relative;
     line-height: 14px;
-}
-
-.logo {
-    color: whitesmoke;
 }
 
 .ltvco-header img {
     height: 15px;
     width: 15px;
 }
+
+.circle {
+    font: 40px Arial, sans-serif;
+    width: 5em;
+    height: 2em;
+    box-sizing: initial;    
+    background: #265196;
+    color: #eddf45;
+    text-align: center;
+    border-radius: 50%;   
+    line-height: 2em;
+    box-sizing: content-box;  
+}
+
+@media only screen and (max-width: 600px) {
+    .email-form, .more-info {
+      display: block !important;
+    }
+
+    .ltvco-banner .lock {
+        position: absolute;
+        left: 4%;
+    }
+
+    .ltvco-banner .ltvco-info {
+        left: 10%;
+        position: relative;
+    }
+    
+  }
