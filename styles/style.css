@@ -1,0 +1,59 @@
+.ltvco-banner {
+    background-color: #265196;
+    height: 350px;
+    text-align: center;
+}
+
+.ltvco-banner h2 {
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 400;
+}
+
+.ltvco-banner p {
+    color: whitesmoke;
+}
+
+.ltvco-banner .desc:before {
+    color: yellow;
+    content: "Start Here -"
+}
+
+.ltvco-banner input {
+    width: 500px !important;
+}
+
+.ltvco-banner button {
+    background-color: #eddf45;
+    background: linear-gradient(50deg, #eddf45, #f2b844);
+    font-weight: 600;
+    text-transform: uppercase;
+    min-width: 115px;
+}
+
+/* .ltvco-banner .desc {
+    color: #eddf45;
+} */
+
+.ltvco-banner .lock {
+    position: absolute;
+    left: 28%;
+    height: 15px;
+    width: 15px;
+}
+
+.ltvco-banner .ltvco-info {
+    color: #eddf45;
+    left: 30%;
+    position: relative;
+    line-height: 14px;
+}
+
+.logo {
+    color: whitesmoke;
+}
+
+.ltvco-header img {
+    height: 15px;
+    width: 15px;
+}
