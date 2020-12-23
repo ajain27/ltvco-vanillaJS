@@ -1,4 +1,4 @@
-.banner-color {
+.banner {
     background-color: #265196;
 }
 .ltvco-color {
@@ -6,7 +6,7 @@
     font-weight: 600;
 }
 .ltvco-banner {
-    height: 350px;
+    height: 400px;
     text-align: center;
 }
 
@@ -54,6 +54,16 @@
 .ltvco-header img {
     height: 15px;
     width: 15px;
+}
+
+.validation-error {
+    border: 2px solid red;
+}
+
+.error-state {
+    background: red;
+    color: white !important;
+    width: 55%;
 }
 
 .circle {

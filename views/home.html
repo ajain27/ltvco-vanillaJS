@@ -1,40 +1,51 @@
 <html>
+
 <head>
-    <link rel="stylesheet" href="../styles/style.css">
-    <script src="../scripts/index.js"></script>
+    <link rel="stylesheet" href="../styles/home.css">
+    <script src="../scripts/search.js"></script>
 </head>
-<div class="ltvco-banner banner-color w-100">
-    <div class="ltvco-header w-100 d-flex mb-5">
-        <div class="w-100">
-            <div class="row d-flex mt-3">
-                <div class="col-5 text-right">
-                    <img src="../assets/PNGs/Logo@2x.png" alt="" class="w-25">
+<div class="email-lookup">
+    <div class="loader text-center d-none" id="loader">
+        <img src="../assets/loading_spinner.gif" alt="">
+    </div>
+
+    <div class="ltvco-banner banner w-100" id="banner">
+        <div class="ltvco-header w-100 d-flex mb-5">
+            <div class="w-100">
+                <div class="row d-flex mt-3">
+                    <div class="col-5 text-right">
+                        <img src="../assets/PNGs/Logo@2x.png" alt="" class="w-25">
+                    </div>
+                    <div class="col-3"></div>
+                    <div class="col-2 d-flex ltvco-header">
+                        <img src="../assets/PNGs/icn_search@2x.png" alt="" class="mr-2">
+                        <img src="../assets/PNGs/icn_person@2x.png" alt="">
+                    </div>
+                    <div class="col-2"></div>
                 </div>
-                <div class="col-3"></div>
-                <div class="col-2 d-flex ltvco-header">
-                    <img src="../assets/PNGs/icn_search@2x.png" alt="" class="mr-2">
-                    <img src="../assets/PNGs/icn_person@2x.png" alt="">
-                </div>
-                <div class="col-2"></div>
             </div>
         </div>
-    </div>
-    <h2>Search Any Email Address</h2>
-    <p class="desc"> Look up the owner's name, photos and online profiles. See what you find!</p>
-    <div class="form-group justify-content-center d-flex email-form">
-        <div class="col-sm-12 col-md-4">
-            <input type="email" class="form-control p-3 mr-2 w-100" id="email" name="email" placeholder="EMAIL">
-        </div>
-        <div class="col-sm-12 col-md-2">
-            <input type="button" class="btn p-3 w-100 go-btn" value="GO!" id="search" onclick="search()"></button>
+        <h2>Search Any Email Address</h2>
+        <p class="desc"> Look up the owner's name, photos and online profiles. See what you find!</p>
+        <div class="form-group justify-content-center d-flex email-form">
+            <div class="col-sm-12 col-md-4">
+                <input type="email" class="form-control p-3 mr-2 w-100" id="email" name="email" placeholder="EMAIL"
+                    onblur="emailValidation()">
+                <p class="text-danger text-left error-state d-none" id="errorMessage">Please add a valid email address.
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-2">
+                <input type="button" class="btn p-3 w-100 go-btn" value="GO!" id="search" onclick="search()"></button>
+            </div>
         </div>
 
-    </div>
-    <div class="form-group d-flex m-2">
-        <img src="../assets/PNGs/lock@2x.png" alt="lock" class="lock">
-        <span class="ltvco-info">Enter Any Email Address. They Won't Be Notified.</span>
+        <div class="form-group d-flex m-2">
+            <img src="../assets/PNGs/lock@2x.png" alt="lock" class="lock">
+            <span class="ltvco-info">Enter Any Email Address. They Won't Be Notified.</span>
+        </div>
     </div>
 </div>
+
 <div class="container-fluid">
     <div class="m-auto text-center">
         <h2 class="ltvco-color mt-3">Reverse Email Lookup</h2>
@@ -46,10 +57,12 @@
                         Lorem
                         Ipsum
                         has been the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of
                         type
                         and
-                        scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                        scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                        the
                         leap
                         into electronic typesetting, remaining essentially unchanged.
                     </p>
