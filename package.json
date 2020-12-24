@@ -1,0 +1,19 @@
+{
+  "name": "ltvco",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajain27/ltvco-vanillajs.git"
+  },
+  "author": "Ankit Jain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajain27/ltvco-vanillajs/issues"
+  },
+  "homepage": "https://github.com/ajain27/ltvco-vanillajs#readme"
+}
