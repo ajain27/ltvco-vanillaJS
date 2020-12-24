@@ -30,6 +30,8 @@ function search() {
                     hideLoader();
                 }
                 $('#banner').removeClass('d-block');
+                $('#reverseLookup').addClass('d-none');
+                $('#findRightPerson').addClass('d-block');
                 displayData(res);
             })
             .catch((err) => {
