@@ -9,7 +9,7 @@ function validateEmail(email) {
 // displaying the error messages if email is incorrect. runs on blur event
 function emailValidation() {
     var email = document.getElementById('email').value;
-    if (!validateEmail(email)) {
+    if (email === '' && !validateEmail(email)) {
         $('#errorMessage').addClass('d-block');
         $('#email').addClass('validation-error');
     } else {
