@@ -1,12 +1,18 @@
 .banner {
     background-color: #265196;
 }
+
+.ltvco-text-color {
+    color: black !important;
+}
+
 .ltvco-color {
-    color: #265196;
+    color: #265196 !important;
     font-weight: 600;
 }
+
 .ltvco-banner {
-    height: 400px;
+    padding: 5px;
     text-align: center;
 }
 
@@ -70,18 +76,26 @@
     font: 40px Arial, sans-serif;
     width: 5em;
     height: 2em;
-    box-sizing: initial;    
+    box-sizing: initial;
     background: #265196;
     color: #eddf45;
     text-align: center;
-    border-radius: 50%;   
+    border-radius: 50%;
     line-height: 2em;
-    box-sizing: content-box;  
+    box-sizing: content-box;
+}
+
+.card {
+    border-radius: 20px;
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.3);
 }
 
 @media only screen and (max-width: 600px) {
-    .email-form, .more-info {
-      display: block !important;
+
+    .email-form,
+    .more-info {
+        display: block !important;
     }
 
     .ltvco-banner .lock {
@@ -92,6 +106,20 @@
     .ltvco-banner .ltvco-info {
         left: 10%;
         position: relative;
+        text-align: left;
     }
-    
-  }
+    .footer-info {
+        display: block !important;
+    }
+    .footer-info {
+        position: relative;
+        left: 8%;
+    }
+    .footer-terms {
+        text-align: center;
+    }
+    .go-btn {
+        margin-top: 10px;
+    }
+
+}
