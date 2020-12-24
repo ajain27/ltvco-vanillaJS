@@ -91,6 +91,14 @@
     box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.3);
 }
 
+.no-result {
+    height: 400px; line-height: 200px;
+}
+.no-result h2 {
+    position: relative;
+    top: 90px !important;
+}
+
 @media only screen and (max-width: 600px) {
 
     .email-form,
