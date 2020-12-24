@@ -30,12 +30,15 @@
     color: #EDAE59;
     content: "Start Here -"
 }
+
 .newSeachDiv h2 {
     color: whitesmoke;
 }
+
 .newSeachDiv p {
     color: whitesmoke;
 }
+
 .newSearch:before {
     color: #EDAE59;
     content: "Try again - ";
@@ -103,8 +106,10 @@
 }
 
 .no-result {
-    height: 400px; line-height: 200px;
+    height: 400px;
+    line-height: 200px;
 }
+
 .no-result h2 {
     position: relative;
     top: 90px !important;
@@ -127,18 +132,36 @@
         position: relative;
         text-align: left;
     }
+
     .footer-info {
         display: block !important;
     }
+
     .footer-info {
         position: relative;
         left: 8%;
     }
+
     .footer-terms {
         text-align: center;
     }
+
     .go-btn {
         margin-top: 10px;
+    }
+
+    .circle {
+        width: 1.5em !important;
+    }
+
+    .lock {
+        position: absolute;
+        left: 13%;
+    }
+
+    .ltvco-info {
+        left: 7%;
+        position: relative;
     }
 
 }
