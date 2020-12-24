@@ -59,16 +59,21 @@
 
 .lock {
     position: absolute;
-    left: 26%;
+    left: -5px;
     height: 15px;
     width: 15px;
 }
 
+.lock-info {
+    position: relative;
+    left: 30%;
+}
+
 .ltvco-info {
     color: #eddf45;
-    left: 27%;
+    left: 1%;
     position: relative;
-    line-height: 14px;
+    line-height: 16px;
 }
 
 .ltvco-header img {
@@ -115,7 +120,7 @@
     top: 90px !important;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
 
     .email-form,
     .more-info {
@@ -124,11 +129,11 @@
 
     .ltvco-banner .lock {
         position: absolute;
-        left: 4%;
+        left: -28%;
     }
 
     .ltvco-banner .ltvco-info {
-        left: 10%;
+        left: -24%;
         position: relative;
         text-align: left;
     }
@@ -152,16 +157,6 @@
 
     .circle-info {
         width: 1.5em !important;
-    }
-
-    .lock {
-        position: absolute;
-        left: 13%;
-    }
-
-    .ltvco-info {
-        left: 6% !important;
-        position: relative;
     }
 
 }
