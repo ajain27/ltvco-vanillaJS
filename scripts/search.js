@@ -33,6 +33,7 @@ function search() {
                     hideLoader();
                 }
                 $('#banner').removeClass('d-block');
+                $('#reverseLookup').removeClass('d-block');
                 $('#reverseLookup').addClass('d-none');
                 $('#findRightPerson').addClass('d-block');
                 displayData(res);
@@ -56,7 +57,7 @@ function showLoader() {
 }
 
 function displayData(data) {
-    if (data && data.length > 0) {
+    if (Object.keys(data).length !== 0) {
         let parsedData = `<div class="container details">
         <h2 class="ltvco-color mt-3 p-3">1 Result</h2>
         <p class="ltvco-text-color">Look at the result below to see the details of the person you're searched for.</p>
