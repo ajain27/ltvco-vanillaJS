@@ -65,7 +65,7 @@ function displayData(data) {
             <div class="card-body">
                 <div class="row">
                     <div class="col-2">
-                    <div class="circle m-auto">
+                    <div class="circle circle-info m-auto">
                         <img src="../assets/PNGs/icn_person@2x.png" alt="">
                     </div>
                     </div>
