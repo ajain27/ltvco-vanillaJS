@@ -23,140 +23,162 @@
     <img src="../assets/loading_spinner.gif" alt="">
     <p class="ltvco-color">Please wait a moment...</p>
 </div>
-
-<!-- Top blue banner which has the input box -->
-<div class="ltvco-banner banner w-100" id="banner">
-    <h2>Search Any Email Address</h2>
-    <p class="desc"> Look up the owner's name, photos and online profiles. See what you find!</p>
-    <div class="form-group justify-content-center d-flex email-form">
-        <div class="col-sm-12 col-md-4">
-            <input type="email" class="form-control p-3 mr-2 w-100" id="email" name="email" placeholder="EMAIL"
-                onblur="emailValidation()">
-            <p class="text-danger text-left error-state d-none" id="errorMessage">Please add a valid email address.
-            </p>
+<section>
+    <!-- Top blue banner which has the input box -->
+    <div class="ltvco-banner banner w-100" id="banner">
+        <h2>Search Any Email Address</h2>
+        <p class="desc"> Look up the owner's name, photos and online profiles. See what you find!</p>
+        <div class="form-group justify-content-center d-flex email-form">
+            <div class="col-sm-12 col-md-4">
+                <input type="email" class="form-control p-3 mr-2 w-100" id="email" name="email" placeholder="EMAIL"
+                    onblur="emailValidation()">
+                <p class="text-danger text-left error-state d-none" id="errorMessage">Please add a valid email address.
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-2">
+                <input type="button" class="btn p-3 w-100 go-btn" value="GO!" id="search" onclick="search()"></button>
+            </div>
         </div>
-        <div class="col-sm-12 col-md-2">
-            <input type="button" class="btn p-3 w-100 go-btn" value="GO!" id="search" onclick="search()"></button>
+        <div class="form-group d-flex m-2">
+            <img src="../assets/PNGs/lock@2x.png" alt="lock" class="lock">
+            <span class="ltvco-info">Enter Any Email Address. They Won't Be Notified.</span>
         </div>
     </div>
-    <div class="form-group d-flex m-2">
-        <img src="../assets/PNGs/lock@2x.png" alt="lock" class="lock">
-        <span class="ltvco-info">Enter Any Email Address. They Won't Be Notified.</span>
+
+    <!-- Display the details of the email searched. This htm is appended dynamically when searched -->
+    <div class="ltvco-banner">
+        <div class="container details" id="details"></div>
     </div>
-</div>
 
-<!-- Display the details of the email searched. This htm is appended dynamically when searched -->
-<div class="ltvco-banner">
-    <div class="container details" id="details"></div>
-</div>
-
-<!-- Reverse Email Lookup  -->
-<div class="container-fluid p-0 d-block" id="reverseLookup">
-    <div class="m-auto text-center" style="background-color: #f0f0f0;
+    <!-- Reverse Email Lookup  -->
+    <div class="container-fluid p-0 d-block" id="reverseLookup">
+        <div class="m-auto text-center" style="background-color: #f0f0f0;
     ;">
-        <h2 class="ltvco-color">Reverse Email Lookup</h2>
-        <div class="container">
-            <div class="row mb-3">
-                <div class="col-1"></div>
-                <div class="col">
-                    <p class="text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem
-                        Ipsum
-                        has been the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of
-                        type
-                        and
-                        scrambled it to make a type specimen book. It has survived not only five centuries, but also
-                        the
-                        leap
-                        into electronic typesetting, remaining essentially unchanged.
-                    </p>
+            <h2 class="ltvco-color">Reverse Email Lookup</h2>
+            <div class="container">
+                <div class="row mb-3">
+                    <div class="col-1"></div>
+                    <div class="col">
+                        <p class="text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem
+                            Ipsum
+                            has been the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            of
+                            type
+                            and
+                            scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                            the
+                            leap
+                            into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                    </div>
+                    <div class="col-1"></div>
                 </div>
-                <div class="col-1"></div>
-            </div>
 
-            <div class="row d-flex more-info m-2">
-                <div class="col-sm-12 col-md-6 mb-3">
-                    <div class="col-sm-12 d-flex">
-                        <div class="circle">1</div>
-                        <div class="ml-2 text-left">
-                            <h6 class="ltvco-color">Lorem Ipsum</h6>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum
-                            has been the
-                            industry's standard dummy text ever since the 1500s
+                <div class="row d-flex more-info m-2">
+                    <div class="col-sm-12 col-md-6 mb-3">
+                        <div class="col-sm-12 d-flex">
+                            <div class="circle">1</div>
+                            <div class="ml-2 text-left">
+                                <h6 class="ltvco-color">Lorem Ipsum</h6>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum
+                                has been the
+                                industry's standard dummy text ever since the 1500s
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 mb-3">
+                        <div class="col-sm-12 d-flex">
+                            <div class="circle">4</div>
+                            <div class="text-left ml-2">
+                                <h6 class="ltvco-color">Lorem Ipsum</h6>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum
+                                has been the
+                                industry's standard dummy text ever since the 1500s
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 mb-3">
-                    <div class="col-sm-12 d-flex">
-                        <div class="circle">4</div>
-                        <div class="text-left ml-2">
-                            <h6 class="ltvco-color">Lorem Ipsum</h6>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum
-                            has been the
-                            industry's standard dummy text ever since the 1500s
+                <div class="row d-flex more-info m-2">
+                    <div class="col-sm-12 col-md-6 mb-3">
+                        <div class="col-sm-12 d-flex">
+                            <div class="circle">2</div>
+                            <div class="ml-2 text-left">
+                                <h6 class="ltvco-color">Lorem Ipsum</h6>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum
+                                has been the
+                                industry's standard dummy text ever since the 1500s
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-12 col-md-6 mb-3">
+                        <div class="col-sm-12 d-flex">
+                            <div class="circle">5</div>
+                            <div class="text-left ml-2">
+                                <h6 class="ltvco-color">Lorem Ipsum</h6>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum
+                                has been the
+                                industry's standard dummy text ever since the 1500s
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row d-flex more-info m-2">
+                    <div class="col-sm-12 col-md-6 mb-3">
+                        <div class="col-sm-12 d-flex">
+                            <div class="circle">3</div>
+                            <div class="ml-2 text-left">
+                                <h6 class="ltvco-color">Lorem Ipsum</h6>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum
+                                has been the
+                                industry's standard dummy text ever since the 1500s
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-12 col-md-6 mb-3">
+                        <div class="col-sm-12 d-flex">
+                            <div class="circle">6</div>
+                            <div class="text-left ml-2">
+                                <h6 class="ltvco-color">Lorem Ipsum</h6>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum
+                                has been the
+                                industry's standard dummy text ever since the 1500s
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row d-flex more-info m-2">
-                <div class="col-sm-12 col-md-6 mb-3">
-                    <div class="col-sm-12 d-flex">
-                        <div class="circle">2</div>
-                        <div class="ml-2 text-left">
-                            <h6 class="ltvco-color">Lorem Ipsum</h6>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum
-                            has been the
-                            industry's standard dummy text ever since the 1500s
-                        </div>
-                    </div>
+        </div>
+    </div>
 
-                </div>
-                <div class="col-sm-12 col-md-6 mb-3">
-                    <div class="col-sm-12 d-flex">
-                        <div class="circle">5</div>
-                        <div class="text-left ml-2">
-                            <h6 class="ltvco-color">Lorem Ipsum</h6>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum
-                            has been the
-                            industry's standard dummy text ever since the 1500s
-                        </div>
-                    </div>
-
-                </div>
+    <!-- Find the right search div -->
+    <div class="container-fluid banner p-5 w-100 text-center newSeachDiv d-none" id="findRightPerson">
+        <h2>Can't find the right person?</h2>
+        <p class="newSearch">Make a new search</p>
+        <div class="form-group justify-content-center d-flex email-form">
+            <div class="col-sm-12 col-md-4">
+                <input type="email" class="form-control p-3 mr-2 w-100" id="rightEmail" name="email" placeholder="EMAIL"
+                    onblur="emailValidation()">
+                <p class="text-danger text-left error-state d-none" id="errorMessage">Please add a valid email address.
+                </p>
             </div>
-            <div class="row d-flex more-info m-2">
-                <div class="col-sm-12 col-md-6 mb-3">
-                    <div class="col-sm-12 d-flex">
-                        <div class="circle">3</div>
-                        <div class="ml-2 text-left">
-                            <h6 class="ltvco-color">Lorem Ipsum</h6>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum
-                            has been the
-                            industry's standard dummy text ever since the 1500s
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-sm-12 col-md-6 mb-3">
-                    <div class="col-sm-12 d-flex">
-                        <div class="circle">6</div>
-                        <div class="text-left ml-2">
-                            <h6 class="ltvco-color">Lorem Ipsum</h6>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum
-                            has been the
-                            industry's standard dummy text ever since the 1500s
-                        </div>
-                    </div>
-                </div>
+            <div class="col-sm-12 col-md-2">
+                <input type="button" class="btn p-3 w-100 go-btn" value="GO!" id="search" onclick="search()"></button>
             </div>
+        </div>
+        <div class="form-group d-flex m-2">
+            <img src="../assets/PNGs/lock@2x.png" alt="lock" class="lock">
+            <span class="ltvco-info">Enter Any Email Address. They Won't Be Notified.</span>
         </div>
     </div>
     <div class="m-auto text-left">
@@ -171,26 +193,6 @@
             </div>
         </footer>
     </div>
-</div>
+</section>
 
-<!-- Find the right search div -->
-<div class="container-fluid banner p-5 w-100 text-center newSeachDiv d-none" id="findRightPerson">
-    <h2>Can't find the right person?</h2>
-    <p class="newSearch">Make a new search</p>
-    <div class="form-group justify-content-center d-flex email-form">
-        <div class="col-sm-12 col-md-4">
-            <input type="email" class="form-control p-3 mr-2 w-100" id="rightEmail" name="email" placeholder="EMAIL"
-                onblur="emailValidation()">
-            <p class="text-danger text-left error-state d-none" id="errorMessage">Please add a valid email address.
-            </p>
-        </div>
-        <div class="col-sm-12 col-md-2">
-            <input type="button" class="btn p-3 w-100 go-btn" value="GO!" id="search" onclick="search()"></button>
-        </div>
-    </div>
-    <div class="form-group d-flex m-2">
-        <img src="../assets/PNGs/lock@2x.png" alt="lock" class="lock">
-        <span class="ltvco-info">Enter Any Email Address. They Won't Be Notified.</span>
-    </div>
-</div>
 </html>
