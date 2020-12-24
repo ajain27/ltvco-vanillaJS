@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ajain27/ltvco-vanillajs/issues"
   },
-  "homepage": "https://github.com/ajain27/ltvco-vanillajs#readme"
+  "homepage": "https://github.com/ajain27/ltvco-vanillajs#readme",
+  "dependencies": {
+    "heroku": "^7.47.6"
+  }
 }
