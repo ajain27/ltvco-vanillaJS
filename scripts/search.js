@@ -1,10 +1,12 @@
-// const email = document.getElementById('#email');
+'use strict'
 
+// check if the entered email is correct
 function validateEmail(email) {
     var pattern = new RegExp("[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$");
-    return pattern.test(email)
+    return pattern.test(email);
 }
 
+// displaying the error messages if email is incorrect. runs on blur event
 function emailValidation() {
     var email = document.getElementById('email').value;
     if (!validateEmail(email)) {
@@ -17,6 +19,7 @@ function emailValidation() {
 }
 
 function search() {
+    // will search only if the email is not emply and valid
     emailValidation();
     var emailSearched = document.getElementById('email').value;
     if (emailSearched !== '') {
