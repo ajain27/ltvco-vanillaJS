@@ -59,7 +59,7 @@
 
 .lock {
     position: absolute;
-    left: -5px;
+    left: 30%;
     height: 15px;
     width: 15px;
 }
@@ -71,7 +71,7 @@
 
 .ltvco-info {
     color: #eddf45;
-    left: 1%;
+    left: 31%;
     position: relative;
     line-height: 16px;
 }
@@ -129,20 +129,17 @@
 
     .ltvco-banner .lock {
         position: absolute;
-        left: -28%;
+        left: 3%;
     }
 
     .ltvco-banner .ltvco-info {
-        left: -24%;
+        left: 5%;
         position: relative;
-        text-align: left;
+        /* text-align: left; */
     }
 
     .footer-info {
         display: block !important;
-    }
-
-    .footer-info {
         position: relative;
         left: 8%;
     }
