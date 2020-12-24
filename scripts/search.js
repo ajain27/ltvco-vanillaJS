@@ -53,8 +53,7 @@ function showLoader() {
 }
 
 function displayData(data) {
-    console.log(data);
-    if (data.length > 0) {
+    if (data && data.length > 0) {
         let parsedData = `<div class="container details">
         <h2 class="ltvco-color mt-3 p-3">1 Result</h2>
         <p class="ltvco-text-color">Look at the result below to see the details of the person you're searched for.</p>
@@ -105,12 +104,10 @@ function displayData(data) {
     </div>`
         document.getElementById("details").innerHTML = parsedData;
     } else {
-        console.log("data--", data);
         let noData = `<div class="container-fluid text-center w-100 no-result">
         <h2 class="ltvco-color">0 Results</h2>
         <p class="ltvco-text-color ">Try starting a new search below</p>
     </div>`
     document.getElementById("details").innerHTML = noData;
     }
-
 }
