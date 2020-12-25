@@ -56,8 +56,19 @@ function showLoader() {
     $('#banner').addClass('d-none');
 }
 
+function formatPhoneNumber(phoneNumberString) {
+    var cleaned = ('' + phoneNumberString).replace(/\D/g, '')
+    var match = cleaned.match(/^(\d{3})(\d{3})(\d{4})$/)
+    if (match) {
+        return '(' + match[1] + ') ' + match[2] + '-' + match[3]
+    }
+    return null
+}
+
+
 function displayData(data) {
     if (Object.keys(data).length !== 0) {
+        let formattedPhoneNumbers = data.phone_numbers.map(number => formatPhoneNumber(number));
         let parsedData = `<h2 class="ltvco-color mt-3 p-3">1 Result</h2>
         <p class="ltvco-text-color">Look at the result below to see the details of the person you're searched for.</p>
         <div class="card mb-3 m-auto">
@@ -81,7 +92,7 @@ function displayData(data) {
                                 <div class="col-sm-12 col-md-6">
                                     <h5 class="ltvco-color text-left">Phone Numbers</h5>
                                     <ul style="list-style: none;" class="p-0 text-left">
-                                        ${data.phone_numbers.map(number => `<li>${number}</li>`).join('')}
+                                        ${formattedPhoneNumbers.map(number => `<li class="ltvcoColor">${number}</li>`).join('')}
                                 </div>
                             </div>
                             <div class="row d-flex">
@@ -107,6 +118,6 @@ function displayData(data) {
         <h2 class="ltvco-color">0 Results</h2>
         <p class="ltvco-text-color ">Try starting a new search below</p>
     </div>`
-    document.getElementById("details").innerHTML = noData;
+        document.getElementById("details").innerHTML = noData;
     }
 }
