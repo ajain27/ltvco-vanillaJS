@@ -93,7 +93,7 @@
 
 .circle {
     font: 40px Arial, sans-serif;
-    width: 5em;
+    width: 2em !important;
     height: 2em;
     box-sizing: initial;
     background: #265196;
@@ -108,6 +108,7 @@
     border-radius: 20px;
     border: 1px solid #CCC;
     box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.3);
+    width: 75%;
 }
 
 .no-result {
@@ -120,16 +121,11 @@
     top: 90px !important;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
 
     .email-form,
     .more-info {
         display: block !important;
-    }
-
-    .ltvco-banner .lock {
-        position: absolute;
-        left: 3%;
     }
 
     .ltvco-banner .ltvco-info {
@@ -154,6 +150,26 @@
 
     .circle-info {
         width: 1.5em !important;
+    }
+    .circleDiv {
+        width: 25%;
+    }
+
+    .detailsDiv {
+        width: 75%;
+    }
+
+    .card {
+        width: 100%;
+    }
+    .lock {
+        position: relative;
+        left: 3%;
+    }
+    .ltvco-info {
+        position: relative;
+        left: 0 !important;
+        
     }
 
 }

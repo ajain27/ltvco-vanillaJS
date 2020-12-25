@@ -61,15 +61,15 @@ function displayData(data) {
         let parsedData = `<div class="container details">
         <h2 class="ltvco-color mt-3 p-3">1 Result</h2>
         <p class="ltvco-text-color">Look at the result below to see the details of the person you're searched for.</p>
-        <div class="card mb-3">
+        <div class="card mb-3 m-auto">
             <div class="card-body">
-                <div class="row">
-                    <div class="col-2">
+                <div class="row d-flex">
+                    <div class="col-xs-3 col-sm-3 col-md-2 circleDiv">
                     <div class="circle circle-info m-auto">
                         <img src="../assets/PNGs/icn_person@2x.png" alt="">
                     </div>
                     </div>
-                    <div class="col-10">
+                    <div class="col-xs-9 col-sm-9 col-md-10 detailsDiv">
                         <div class="card-text">
                             <h3 class="text-left ltvco-color">${data.first_name}</h3>
                             <p class="text-left ltvco-text-color">${data.description}</p>
