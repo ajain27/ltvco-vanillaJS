@@ -93,7 +93,7 @@
 
 .circle {
     font: 40px Arial, sans-serif;
-    width: 2em !important;
+    width: 5em;
     height: 2em;
     box-sizing: initial;
     background: #265196;
@@ -151,6 +151,7 @@
     .circle-info {
         width: 1.5em !important;
     }
+
     .circleDiv {
         width: 25%;
     }
@@ -162,18 +163,37 @@
     .card {
         width: 100%;
     }
+
     .lock {
         position: relative;
         left: 3%;
     }
+
     .ltvco-info {
         position: relative;
         left: 0 !important;
-        
+
     }
 
     .company-logo {
         width: 75% !important;
+    }
+
+    .extracol {
+        display: none !important;
+    }
+
+    .logo-div {
+        width: 50%;
+        position: relative;
+        left: 10%;
+    }
+
+    .search-user {
+        width: 50% !important;
+    }
+    .circle {
+        width: 10em !important;
     }
 
 }
