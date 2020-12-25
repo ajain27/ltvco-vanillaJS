@@ -68,7 +68,7 @@
 }
 .newLock {
     position: relative;
-    left: 25%;
+    left: 24.5%;
     height: 15px;
     width: 15px;
 }
@@ -86,7 +86,7 @@
 }
 
 .ltvco-info-new {
-    left: 25.5%;
+    left: 25%;
 }
 
 .ltvco-header img {
@@ -152,7 +152,8 @@
     }
 
     .footer-terms {
-        text-align: center;
+        position: relative;;
+        left: 25% !important;
     }
 
     .go-btn {
@@ -217,17 +218,19 @@
 }
 
 /* ------- Tablets -------- */
-
 @media (min-width: 768px) and (max-width: 1024px) {
     .col-email {
         position: relative;
         left: 5%;
         padding: 0;
     }
-
     .col-btn {
         position: relative;
         left: 5%;
+    }
+    .col-btn-newSearch {
+        position: relative !important;
+        left: 3% !important;
     }
     .lock {
         position: absolute;
@@ -238,6 +241,17 @@
         left: 3%;
         
     }
+
+    .newLock {
+        position: relative;
+        left: 0;
+    }
+
+    .ltvco-info-new {
+        position: relative;
+        left: 1% !important;
+    }
+
 }
 
 /* ------- Large Screens -------- */
