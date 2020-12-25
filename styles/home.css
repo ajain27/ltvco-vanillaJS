@@ -61,8 +61,8 @@
 
 
 .lock {
-    position: absolute;
-    left: 26%;
+    position: relative;
+    left: 27%;
     height: 15px;
     width: 15px;
 }
@@ -80,7 +80,7 @@
 
 .ltvco-info {
     color: #eddf45;
-    left: 27%;
+    left: 28%;
     position: relative;
     line-height: 16px;
 }
@@ -214,11 +214,42 @@
     .circle {
         width: 10em;
     }
-
 }
 
-/* * ------- Tablets --------* */
+/* ------- Tablets -------- */
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    .col-email {
+        position: relative;
+        left: 5%;
+        padding: 0;
+    }
 
+    .col-btn {
+        position: relative;
+        left: 5%;
+    }
+    .lock {
+        position: absolute;
+        left: 2%;
+    }
+    .ltvco-info {
+        position: relative;
+        left: 3%;
+        
+    }
 }
+
+/* ------- Large Screens -------- */
+@media screen and (min-width: 1400px) {
+    .col-email {
+        position: relative;
+        left: 6%;
+        padding: 0;
+    }
+    
+    .col-btn {
+        position: relative;
+        left: 6%;
+    }
+  }
