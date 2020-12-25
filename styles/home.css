@@ -137,17 +137,12 @@
     top: 90px !important;
 }
 
+/* *---- Smaller devices ----------* */
 @media only screen and (max-width: 600px) {
 
     .email-form,
     .more-info {
         display: block !important;
-    }
-
-    .ltvco-banner .ltvco-info {
-        left: 5%;
-        position: relative;
-        /* text-align: left; */
     }
 
     .footer-info {
@@ -191,8 +186,12 @@
 
     .ltvco-info {
         position: relative;
-        left: 0 !important;
+        left: 15px !important;
+    }
 
+    .ltvco-info-new {
+        position: relative;
+        left: 5px !important;
     }
 
     .company-logo {
@@ -215,5 +214,11 @@
     .circle {
         width: 10em;
     }
+
+}
+
+/* * ------- Tablets --------* */
+
+@media (min-width: 768px) and (max-width: 1024px) {
 
 }
