@@ -69,7 +69,7 @@ function formatPhoneNumber(phoneNumberString) {
 function displayData(data) {
     if (Object.keys(data).length !== 0) {
         let formattedPhoneNumbers = data.phone_numbers.map(number => formatPhoneNumber(number));
-        let parsedData = `<h2 class="ltvco-color mt-3 p-3">1 Result</h2>
+        let parsedData = `<h2 class="ltvco-color mt-3 p-3 oneResult">1 Result</h2>
         <p class="ltvco-text-color">Look at the result below to see the details of the person you're searched for.</p>
         <div class="card mb-3 m-auto">
             <div class="card-body">

@@ -137,6 +137,10 @@
     top: 90px !important;
 }
 
+.oneResult {
+    font-weight: 800 !important;
+}
+
 /* *---- Smaller devices ----------* */
 @media only screen and (max-width: 600px) {
 
