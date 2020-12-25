@@ -58,8 +58,7 @@ function showLoader() {
 
 function displayData(data) {
     if (Object.keys(data).length !== 0) {
-        let parsedData = `<div class="container details">
-        <h2 class="ltvco-color mt-3 p-3">1 Result</h2>
+        let parsedData = `<h2 class="ltvco-color mt-3 p-3">1 Result</h2>
         <p class="ltvco-text-color">Look at the result below to see the details of the person you're searched for.</p>
         <div class="card mb-3 m-auto">
             <div class="card-body">
@@ -100,12 +99,8 @@ function displayData(data) {
                         </div>
                     </div>
                 </div>
-                <!-- <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a> -->
             </div>
-        </div>
-    </div>`
+        </div>`
         document.getElementById("details").innerHTML = parsedData;
     } else {
         let noData = `<div class="container-fluid text-center w-100 no-result">
