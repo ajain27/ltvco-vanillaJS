@@ -148,6 +148,10 @@ main {
     height: 60px !important;
 }
 
+.search-user {
+    text-align: right !important;
+}
+
 /* *---- Smaller devices ----------* */
 @media only screen and (max-width: 600px) {
 
@@ -222,6 +226,7 @@ main {
 
     .search-user {
         width: 50% !important;
+        text-align: center !important;
     }
     .circle {
         width: 10em;
