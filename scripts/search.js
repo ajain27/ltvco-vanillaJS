@@ -70,8 +70,8 @@ function formatPhoneNumber(phoneNumberString) {
 function displayData(data) {
     if (Object.keys(data).length !== 0) {
         let formattedPhoneNumbers = data.phone_numbers.map(number => formatPhoneNumber(number));
-        let parsedData = `<h2 class="ltvco-color mt-3 p-3 oneResult">1 Result</h2>
-        <p class="ltvco-text-color">Look at the result below to see the details of the person you're searched for.</p>
+        let parsedData = `<h2 class="ltv-color mt-3 p-3 oneResult">1 Result</h2>
+        <p class="ltv-text-color">Look at the result below to see the details of the person you're searched for.</p>
         <div class="card mb-3 m-auto">
             <div class="card-body">
                 <div class="row d-flex">
@@ -82,27 +82,27 @@ function displayData(data) {
                     </div>
                     <div class="col-xs-9 col-sm-9 col-md-10 detailsDiv">
                         <div class="card-text">
-                            <h3 class="text-left ltvco-color">${data.first_name}</h3>
-                            <p class="text-left ltvco-text-color">${data.description}</p>
+                            <h3 class="text-left ltv-color">${data.first_name}</h3>
+                            <p class="text-left ltv-text-color">${data.description}</p>
     
                             <div class="row d-flex">
                                 <div class="col-sm-12 col-md-6">
-                                    <h5 class="ltvco-color text-left">Address</h5>
-                                    <p class="text-left ltvco-text-color">${data.address}</p>
+                                    <h5 class="ltv-color text-left">Address</h5>
+                                    <p class="text-left ltv-text-color">${data.address}</p>
                                 </div>
                                 <div class="col-sm-12 col-md-6">
-                                    <h5 class="ltvco-color text-left">Phone Numbers</h5>
+                                    <h5 class="ltv-color text-left">Phone Numbers</h5>
                                     <ul style="list-style: none;" class="p-0 text-left">
                                         ${formattedPhoneNumbers.map(number => `<li class="ltvcoColor">${number}</li>`).join('')}
                                 </div>
                             </div>
                             <div class="row d-flex">
                                 <div class="col-sm-12 col-md-6">
-                                    <h5 class="ltvco-color text-left">Email</h5>
-                                    <p class="text-left ltvco-text-color">${data.email}</p>
+                                    <h5 class="ltv-color text-left">Email</h5>
+                                    <p class="text-left ltv-text-color">${data.email}</p>
                                 </div>
                                 <div class="col-sm-12 col-md-6">
-                                    <h5 class="ltvco-color text-left">Relatives</h5>
+                                    <h5 class="ltv-color text-left">Relatives</h5>
                                     <ul style="list-style: none;" class="p-0 text-left">
                                     ${data.relatives.map(relative => `<li>${relative}</li>`).join('')}
                                     </ul>
@@ -116,8 +116,8 @@ function displayData(data) {
         document.getElementById("details").innerHTML = parsedData;
     } else {
         let noData = `<div class="container-fluid text-center w-100 no-result">
-        <h2 class="ltvco-color">0 Results</h2>
-        <p class="ltvco-text-color ">Try starting a new search below</p>
+        <h2 class="ltv-color">0 Results</h2>
+        <p class="ltv-text-color ">Try starting a new search below</p>
     </div>`
         document.getElementById("details").innerHTML = noData;
     }

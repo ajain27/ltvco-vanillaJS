@@ -1,44 +1,44 @@
-$ltvco-color: #265196;
-$ltvco-yelow-text: #EDAE59;
-$ltvco-btn-background: #eddf45;
-$ltvco-btn-focus-background: #f2b844;
+$ltv-color: #265196;
+$ltv-yelow-text: #EDAE59;
+$ltv-btn-background: #eddf45;
+$ltv-btn-focus-background: #f2b844;
 
 main {
     min-height: calc(100vh - 60px) !important;
 }
 .banner {
-    background-color: $ltvco-color;
+    background-color: $ltv-color;
 }
 .ltvcoColor {
-    color: $ltvco-color !important;
+    color: $ltv-color !important;
 }
 
-.ltvco-text-color {
+.ltv-text-color {
     color: black !important;
 }
 
-.ltvco-color {
-    color: $ltvco-color !important;
+.ltv-color {
+    color: $ltv-color !important;
     font-weight: 600;
 }
 
-.ltvco-banner {
+.ltv-banner {
     padding: 5px;
     text-align: center;
 }
 
-.ltvco-banner h2 {
-    text-align: center;
+.ltv-banner h2 {
+    text-align: center !important;
     color: whitesmoke;
     font-weight: 400;
 }
 
-.ltvco-banner p {
+.ltv-banner p {
     color: whitesmoke;
 }
 
-.ltvco-banner .desc:before {
-    color: $ltvco-yelow-text;
+.ltv-banner .desc:before {
+    color: $ltv-yelow-text;
     content: "Start Here -"
 }
 
@@ -51,20 +51,20 @@ main {
 }
 
 .newSearch:before {
-    color: $ltvco-yelow-text;
+    color: $ltv-yelow-text;
     content: "Try again - ";
     font-size: 20px !important;
 }
 
 .go-btn {
-    background-color: $ltvco-btn-background !important;
-    background: linear-gradient(50deg, $ltvco-btn-focus-background,$ltvco-btn-background);
+    background-color: $ltv-btn-background !important;
+    background: linear-gradient(50deg, $ltv-btn-focus-background,$ltv-btn-background);
     font-weight: 600;
     text-transform: uppercase;
 }
 
 .go-btn:focus {
-    background-color: $ltvco-btn-focus-background !important;
+    background-color: $ltv-btn-focus-background !important;
 }
 
 .go-btn:hover {
@@ -90,19 +90,19 @@ main {
     left: 30%;
 }
 
-.ltvco-info {
-    color: #eddf45;
+.ltv-info {
+    color: $ltv-btn-background;
     left: 27% !important;
     position: relative;
     line-height: 16px;
     bottom: 8px;
 }
 
-.ltvco-info-new {
+.ltv-info-new {
     left: 25%;
 }
 
-.ltvco-header img {
+.ltv-header img {
     height: 15px;
     width: 15px;
 }
@@ -123,7 +123,7 @@ main {
     height: 2em;
     box-sizing: initial;
     background: #265196;
-    color: #eddf45;
+    color: $ltv-btn-background;
     text-align: center;
     border-radius: 50%;
     line-height: 2em;
@@ -154,7 +154,7 @@ main {
     font-weight: 800 !important;
 }
 
-.ltvco-footer {
+.ltv-footer {
     height: 60px !important;
 }
 
@@ -221,12 +221,12 @@ main {
         left: 0;
     }
 
-    .ltvco-info {
+    .ltv-info {
         position: relative;
         left: 15px !important;
     }
 
-    .ltvco-info-new {
+    .ltv-info-new {
         position: relative;
         left: 5px !important;
     }
@@ -277,7 +277,7 @@ main {
         left: 5% !important;
         bottom: 10px !important;
     }
-    .ltvco-info {
+    .ltv-info {
         position: relative !important;
         left: 6% !important;
         bottom: 8px !important;
@@ -289,7 +289,7 @@ main {
         left: 0;
     }
 
-    .ltvco-info-new {
+    .ltv-info-new {
         position: relative;
         left: 1% !important;
     }
@@ -321,7 +321,7 @@ main {
         left: 26% !important;
     }
 
-    .ltvco-info {
+    .ltv-info {
         position: relative !important;
         left: 26% !important;
     }
