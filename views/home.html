@@ -1,21 +1,18 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../dist/css/style.min.css">
     <script src="../scripts/search.js"></script>
 </head>
 <header class="ltvco-header banner w-100 d-flex pb-4">
     <div class="w-100">
-        <div class="row d-flex mt-3">
-            <div class="col-md-3 extracol"></div>
-            <div class="col-md-5 text-left p-0 logo-div">
-                <img src="../assets/PNGs/Logo@2x.png" alt="" class="company-logo w-25" style="    position: relative;left: 30px;">
+        <div class="row d-flex mt-3" style="justify-content: space-between;">
+            <div class="col-md-6 col-sm-6 p-0 logo-div">
+                <img src="../assets/PNGs/Logo@2x.png" alt="" class="company-logo">
             </div>
-            <div class="col-md-1 p-0 search-user">
-                <img src="../assets/PNGs/icn_search@2x.png" alt="" class="mr-2">
-                <img src="../assets/PNGs/icn_person@2x.png" alt=""></div>
-            <div class="extracol col-md-3 d-flex ltvco-header p-0 text-left">
-            </div>
+            <div class="col-md-6 col-sm-6 p-0 search-user-icon">
+                <img src="../assets/PNGs/icn_search@2x.png" alt="search" class="mr-2">
+                <img src="../assets/PNGs/icn_person@2x.png" alt="user"></div>
         </div>
     </div>
 </header>
@@ -35,14 +32,17 @@
                 <p class="text-danger text-left error-state d-none" id="errorMessage">Please add a valid email address.
                 </p>
             </div>
-            <div class="col-sm-12 col-lg-1 col-md-3 col-btn">
-                <input type="button" class="btn p-3 w-100 go-btn" value="GO!" id="search" onclick="search()"></button>
+            <div class="col-sm-12 col-lg-2 col-md-3 col-btn">
+                <input type="button" class="btn p-3 w-50 float-left go-btn" value="GO!" id="search"
+                    onclick="search()"></button>
             </div>
-            <div class="col-md-1"></div>
         </div>
-        <div class="form-group d-flex m-2 pb-5 text-left">
-            <img src="../assets/PNGs/lock@2x.png" alt="lock" class="lock">
-            <span class="ltvco-info">Enter Any Email Address. They Won't Be Notified.</span>
+        <div class="m-2 pb-5 text-left">
+            <div class="lock-small">
+                <img src="../assets/PNGs/lock@2x.png" alt="lock" class="lock">
+                <span class="ltvco-info">Enter Any Email Address. They Won't Be Notified.</span>
+            </div>
+
         </div>
     </div>
 
@@ -57,7 +57,7 @@
     ;">
             <h1 class="ltvco-color pt-5 pb-3">Reverse Email Lookup</h1>
             <div class="container">
-                <div class="row mb-3" >
+                <div class="row mb-3">
                     <div class="col-1"></div>
                     <div class="col">
                         <p class="text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry.

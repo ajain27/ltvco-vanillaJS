@@ -1,11 +1,16 @@
+$ltvco-color: #265196;
+$ltvco-yelow-text: #EDAE59;
+$ltvco-btn-background: #eddf45;
+$ltvco-btn-focus-background: #f2b844;
+
 main {
     min-height: calc(100vh - 60px) !important;
 }
 .banner {
-    background-color: #265196;
+    background-color: $ltvco-color;
 }
 .ltvcoColor {
-    color: #265196 !important;
+    color: $ltvco-color !important;
 }
 
 .ltvco-text-color {
@@ -13,7 +18,7 @@ main {
 }
 
 .ltvco-color {
-    color: #265196 !important;
+    color: $ltvco-color !important;
     font-weight: 600;
 }
 
@@ -33,7 +38,7 @@ main {
 }
 
 .ltvco-banner .desc:before {
-    color: #EDAE59;
+    color: $ltvco-yelow-text;
     content: "Start Here -"
 }
 
@@ -46,28 +51,32 @@ main {
 }
 
 .newSearch:before {
-    color: #EDAE59;
+    color: $ltvco-yelow-text;
     content: "Try again - ";
     font-size: 20px !important;
 }
 
 .go-btn {
-    background-color: #eddf45 !important;
-    background: linear-gradient(50deg, #f2b844, #eddf45);
+    background-color: $ltvco-btn-background !important;
+    background: linear-gradient(50deg, $ltvco-btn-focus-background,$ltvco-btn-background);
     font-weight: 600;
     text-transform: uppercase;
 }
 
 .go-btn:focus {
-    background-color: #f2b844 !important;
+    background-color: $ltvco-btn-focus-background !important;
 }
 
+.go-btn:hover {
+    cursor: pointer !important;
+}
 
 .lock {
     position: relative;
     left: 27%;
     height: 15px;
     width: 15px;
+    bottom: 10px;
 }
 .newLock {
     position: relative;
@@ -83,9 +92,10 @@ main {
 
 .ltvco-info {
     color: #eddf45;
-    left: 28%;
+    left: 27% !important;
     position: relative;
     line-height: 16px;
+    bottom: 8px;
 }
 
 .ltvco-info-new {
@@ -126,7 +136,7 @@ main {
 .card {
     border-radius: 20px;
     border: 1px solid #CCC;
-    box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 4px rgb(0, 0, 0.3);
     width: 85% !important;
 }
 
@@ -148,8 +158,18 @@ main {
     height: 60px !important;
 }
 
-.search-user {
-    text-align: right !important;
+.company-logo {
+    position: relative !important;
+    width: 20% !important;
+    left: 15% !important;
+}
+
+.search-user-icon {
+    text-align: center;
+}
+
+.logo-div {
+    text-align: center !important;
 }
 
 /* *---- Smaller devices ----------* */
@@ -173,6 +193,7 @@ main {
 
     .go-btn {
         margin-top: 10px;
+        width: 100% !important;
     }
 
     .circle-info {
@@ -193,7 +214,7 @@ main {
 
     .lock {
         position: relative;
-        left: 3%;
+        left: 5%;
     }
     .newLock {
         position: relative;
@@ -223,13 +244,16 @@ main {
         position: relative;
         left: 10%;
     }
-
-    .search-user {
-        width: 50% !important;
-        text-align: center !important;
-    }
     .circle {
         width: 10em;
+    }
+    .lock-small {
+        position: relative;
+        top: 10px;
+    }
+
+    .search-user-icon {
+        width: 50% !important;
     }
 }
 
@@ -249,12 +273,14 @@ main {
         left: 3% !important;
     }
     .lock {
-        position: absolute;
-        left: 2%;
+        position: relative !important;
+        left: 5% !important;
+        bottom: 10px !important;
     }
     .ltvco-info {
-        position: relative;
-        left: 3%;
+        position: relative !important;
+        left: 6% !important;
+        bottom: 8px !important;
         
     }
 
@@ -273,6 +299,33 @@ main {
         top: 10px !important;
     }
 
+    .company-logo {
+        width: 30% !important;
+        position: relative !important;
+        left: -20% !important;
+        text-align: left !important;
+    }
+
+    .search-user-icon {
+        position: relative !important;
+        left: 12% !important;
+    }
+
+}
+
+// iPad Pro media query
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+
+    .lock {
+        position: relative !important;
+        left: 26% !important;
+    }
+
+    .ltvco-info {
+        position: relative !important;
+        left: 26% !important;
+    }
+
 }
 
 /* ------- Large Screens -------- */
@@ -288,3 +341,11 @@ main {
         left: 6%;
     }
   }
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
