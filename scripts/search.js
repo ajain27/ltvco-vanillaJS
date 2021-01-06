@@ -19,7 +19,6 @@ function emailValidation() {
 }
 
 function search() {
-    console.log('clicked');
     // will search only if the email is not emply and valid
     emailValidation();
     var emailSearched = document.getElementById('email').value;
